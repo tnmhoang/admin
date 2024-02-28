@@ -14,4 +14,5 @@ declare module 'react-scrollspy';
 declare module 'react-masonry-component';
 declare module 'react-select';
 declare module 'react-dragula';
-declare module "react-beautiful-dnd";
+declare module 'react-beautiful-dnd';
+declare module '*.ttf';
