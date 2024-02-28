@@ -57,6 +57,8 @@ const publicRoutes = [
   { path: "/login", component: <Login /> },
   { path: "/forgot-password", component: <ForgetPasswordPage /> },
   { path: "/register", component: <Register /> },
+  { path: "/dashboard", component: <Dashboard /> },
+
 
 ];
 
