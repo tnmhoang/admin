@@ -13,24 +13,56 @@ Font.register({
   src: TimeRoman,
 });
 
-const PDF = () => {
+interface IPDFProps {
+  isNameA: string | undefined;
+  isNameB: string | undefined;
+  isPositionA: string | undefined;
+  isDateCreate: IDateFormat | undefined;
+  isDateBirthA: IDateFormat | undefined;
+  isDateBirthB: IDateFormat | undefined;
+  isGender: string | undefined;
+  isNumberPhone: string | undefined;
+  isCCCDA: string | undefined;
+  isCCCDB: string | undefined;
+  isDateCCCDA: IDateFormat | undefined;
+  isDateCCCDB: IDateFormat | undefined;
+  isPlaceCCCDA: string | undefined;
+  isPlaceCCCDB: string | undefined;
+}
+
+const PDF = (props: IPDFProps) => {
   document.title = 'Dashboard | Velzon - React Admin & Dashboard Template';
+  const {
+    isNameA,
+    isNameB,
+    isPositionA,
+    isDateCreate,
+    isDateBirthA,
+    isDateBirthB,
+    isGender,
+    isNumberPhone,
+    isCCCDA,
+    isCCCDB,
+    isDateCCCDA,
+    isDateCCCDB,
+    isPlaceCCCDA,
+    isPlaceCCCDB,
+  } = props;
+  // const [isNameA, setIsNameA] = useState<string>();
+  // const [isNameB, setIsNameB] = useState<string>();
+  // const [isPositionA, setIsPositionA] = useState<string>();
+  // const [isDateCreate, setisDateCreate] = useState<IDateFormat>();
+  // const [isDateBirthA, setIsDateBirthA] = useState<IDateFormat>();
+  // const [isDateBirthB, setIsDateBirthB] = useState<IDateFormat>();
+  // const [isGender, setIsGender] = useState<string>();
+  // const [isNumberPhone, setIsNumberPhone] = useState<string>();
 
-  const [isNameA, setIsNameA] = useState<string>();
-  const [isNameB, setIsNameB] = useState<string>();
-  const [isPositionA, setIsPositionA] = useState<string>();
-  const [isDateCreate, setisDateCreate] = useState<IDateFormat>();
-  const [isDateBirthA, setIsDateBirthA] = useState<IDateFormat>();
-  const [isDateBirthB, setIsDateBirthB] = useState<IDateFormat>();
-  const [isGender, setIsGender] = useState<string>();
-  const [isNumberPhone, setIsNumberPhone] = useState<string>();
-
-  const [isCCCDA, setIsCCCDA] = useState<string>();
-  const [isCCCDB, setIsCCCDB] = useState<string>();
-  const [isDateCCCDA, setIsDateCCCDA] = useState<IDateFormat>();
-  const [isDateCCCDB, setIsDateCCCDB] = useState<IDateFormat>();
-  const [isPlaceCCCDA, setIsPlaceCCCDA] = useState<string>();
-  const [isPlaceCCCDB, setIsPlaceCCCDB] = useState<string>();
+  // const [isCCCDA, setIsCCCDA] = useState<string>();
+  // const [isCCCDB, setIsCCCDB] = useState<string>();
+  // const [isDateCCCDA, setIsDateCCCDA] = useState<IDateFormat>();
+  // const [isDateCCCDB, setIsDateCCCDB] = useState<IDateFormat>();
+  // const [isPlaceCCCDA, setIsPlaceCCCDA] = useState<string>();
+  // const [isPlaceCCCDB, setIsPlaceCCCDB] = useState<string>();
 
   const styles = StyleSheet.create({
     page: {
