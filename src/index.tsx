@@ -9,9 +9,7 @@ import rootReducer from './slices';
 
 const store = configureStore({ reducer: rootReducer, devTools: true });
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <Provider store={store}>
     <React.Fragment>
