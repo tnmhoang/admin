@@ -31,7 +31,6 @@ export const loginUser = (user : any, history : any) => async (dispatch : any) =
     }
     
     var data = await response;
-    
 
     if (data) {
       sessionStorage.setItem("authUser", JSON.stringify(data));

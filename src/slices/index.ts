@@ -17,6 +17,8 @@ import chatReducer from "./chat/reducer";
 //Mailbox
 import MailboxReducer from "./mailbox/reducer";
 
+import ContractReducer from "./contracts/reducer";
+
 const rootReducer = combineReducers({
     Layout: LayoutReducer,
     Login: LoginReducer,
@@ -26,6 +28,7 @@ const rootReducer = combineReducers({
     Calendar: CalendarReducer,
     Chat: chatReducer,
     Mailbox: MailboxReducer,
+    Contract: ContractReducer
 });
 
 export default rootReducer;

@@ -15,3 +15,5 @@ export * from "./chat/thunk";
 
 //Mailbox
 export * from "./mailbox/thunk";
+
+export * from "./contracts/thunk";
